@@ -1,0 +1,338 @@
+/* Mobile Screens */
+header img {
+  display: none;
+}
+
+body {
+  background: url(images/background.jpg) no-repeat fixed;
+  font-family: sans-serif;
+}
+
+#wrapHome,
+#wrapAbout,
+#wrapOffense,
+#wrapDefense {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 33, 68, 0.9);
+}
+
+nav {
+  padding: 3%;
+  width: 93%;
+  background-color: rgba(0, 33, 68, 0.7);
+  color: #fff;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  text-align: center;
+  padding: 4% 0;
+  border-bottom: 5px solid rgb(165, 171, 175);
+}
+
+nav li:last-child {
+  border-bottom: none;
+}
+
+nav a {
+  color: rgb(105, 190, 40);
+  text-decoration: none;
+  font-size: 120%;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: rgb(165, 171, 175);
+}
+
+h2 {
+  color: #fff;
+  font-size: 20px;
+}
+
+p,
+p1,
+p2,
+p3 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+p1 img,
+p2 img,
+p3 img {
+  position: relative;
+  left: 10px;
+  width: 35%;
+  height: 35%;
+}
+
+main {
+  padding: 5%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 22px;
+  color: #fff;
+  text-align: left;
+  position: relative;
+}
+
+footer {
+  padding: 3%;
+  width: 93%;
+  background-color: rgba(0, 33, 68, 0.7);
+  color: #fff;
+  box-shadow: 2px 2px 5px #000000;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+footer li {
+  list-style-type: none;
+  text-align: center;
+  padding: 8% 0;
+  border-bottom: 5px solid rgb(165, 171, 175);
+}
+
+footer li:last-child {
+  border-bottom: none;
+}
+
+footer a {
+  color: rgb(105, 190, 40);
+  text-decoration: none;
+  font-size: 120%;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: rgb(165, 171, 175);
+}
+
+li,
+a {
+  color: rgb(105, 190, 40);
+  text-decoration: none;
+  list-style-type: none;
+  transition: color 0.3s;
+}
+
+li,
+a:hover {
+  color: rgb(165, 171, 175);
+}
+
+img {
+  padding: 10px;
+  position: relative;
+  width: 40%;
+  height: 40%;
+}
+
+/* Tablet Screens */
+@media screen and (min-width: 768px) {
+  header img {
+    display: none;
+  }
+
+  #AboutLi {
+    padding: 0 12%;
+    border-bottom: none;
+  }
+
+  #AboutLi a {
+    font-size: 25px;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    padding: 0 7%;
+    border-bottom: none;
+  }
+
+  footer {
+    display: flex;
+  }
+
+  footer li {
+    padding: 0 10%;
+    border-bottom: none;
+  }
+
+  header h1,
+  h2 {
+    text-align: center;
+  }
+
+  p,
+  p1,
+  p2,
+  p3 {
+    font-size: larger;
+  }
+
+  li,
+  a {
+    font-size: 20px;
+  }
+}
+
+/* Desktop Screens */
+@media screen and (min-width: 1024px) {
+  header {
+    background: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 130px;
+    position: relative;
+    bottom: 117px;
+  }
+
+  nav {
+    position: relative;
+    top: 130px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+  }
+
+  #wrapAbout header {
+    background: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 130px;
+    position: relative;
+    top: 0px;
+  }
+
+  #wrapAbout nav {
+    position: relative;
+    top: 130px;
+    left: 5px;
+  }
+
+  #wrapAbout header h1 {
+    position: relative;
+    top: 115px;
+  }
+
+  #wrapAbout p {
+    position: relative;
+    top: 170px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  p1,
+  p2,
+  p3 {
+    position: relative;
+    top: 125px;
+  }
+
+  p1 img,
+  p2 img,
+  p3 img {
+    position: relative;
+    width: 35%;
+    height: 35%;
+  }
+
+  footer {
+    position: relative;
+    top: 125px;
+  }
+
+  #wrapHome {
+    height: 1200px;
+  }
+
+  #wrapAbout {
+    height: 1280px;
+  }
+
+  #imagesAbout {
+    width: 50%;
+    height: 35%;
+    position: relative;
+    top: 200px;
+  }
+
+  #wrapHome header h1 {
+    position: relative;
+    position: relative;
+    top: 230px;
+  }
+
+  #wrapHome header h2 {
+    position: relative;
+    position: relative;
+    top: 220px;
+  }
+
+  #HistoryInfo {
+    position: relative;
+    top: 160px;
+  }
+
+  #wrapOffense {
+    height: 2500px;
+  }
+
+  #wrapDefense {
+    height: 1770px;
+  }
+
+  #wrapOffense header,
+  #wrapDefense header {
+    background: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 130px;
+    position: relative;
+    top: 0px;
+  }
+
+  #wrapOffense nav,
+  #wrapDefense nav {
+    position: relative;
+    top: 130px;
+  }
+
+  #wrapOffense h1,
+  h2,
+  #wrapDefense h1,
+  h2 {
+    position: relative;
+    top: 140px;
+  }
+
+  #wrapDefense p img {
+    height: 35%;
+    width: 20%;
+  }
+
+  #wrapOffense p,
+  #wrapDefense p {
+    position: relative;
+    top: 210px;
+  }
+}
